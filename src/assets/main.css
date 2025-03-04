@@ -1,4 +1,4 @@
-@import './base.css';
+/* @import './base.css';
 
 #app {
   max-width: 1280px;
@@ -32,4 +32,166 @@ a,
     grid-template-columns: 1fr 1fr;
     padding: 0 2rem;
   }
+} */
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbar-nav {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-item {
+  list-style: none;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.nav-link i {
+  margin-left: 5px;
+}
+
+/* Contact List Styles */
+.contact-list {
+  background-color: white;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.contact-list h2 {
+  margin-top: 0;
+  font-size: 20px;
+  color: #333;
+}
+
+.contact-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.contact-list li {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+}
+
+.contact-list li:last-child {
+  border-bottom: none;
+}
+
+.contact-list li:hover {
+  background-color: #f9f9f9;
+}
+
+/* Contact Card Styles */
+.contact-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.contact-card h2 {
+  margin-top: 0;
+  font-size: 20px;
+  color: #333;
+}
+
+.contact-card p {
+  margin: 5px 0;
+}
+
+.contact-card strong {
+  font-weight: bold;
+}
+
+.contact-card i.fa-check {
+  color: green;
+}
+
+.contact-card i.fa-times {
+  color: red;
+}
+
+/* Input Search Styles */
+.input-search {
+  margin-bottom: 20px;
+}
+
+.input-search input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Button Styles */
+.button-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.button-group button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button-group button.primary {
+  background-color: #007bff;
+  color: white;
+}
+
+.button-group button.success {
+  background-color: #28a745;
+  color: white;
+}
+
+.button-group button.danger {
+  background-color: #dc3545;
+  color: white;
+}
+
+/* Favorite Contact Styles */
+.favorite {
+  color: gold;
+  font-size: 20px;
 }
