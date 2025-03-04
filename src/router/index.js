@@ -7,6 +7,11 @@ const routes = [
         name: "contactbook",
         component: ContactBook,
     },
+    {
+    path: '/:pathMatch(.*)*', // Bắt mọi đường dẫn không khớp
+    name: 'notfound',
+    component: () => import('@/views/NotFound.vue') // Load trang NotFound.vue khi không tìm thấy trang
+    },
 ];
 
 const router = createRouter({
